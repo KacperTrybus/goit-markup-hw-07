@@ -29,30 +29,32 @@
     />
   </head>
   <body>
-    <header class="box-head">
-      <div class="container header-container">
-        <a href="index.html" class="logo logo-box"><span class="logo-color">Web</span>Studio</a>
-        <nav class="nav-box">
-          <ul class="nav-list">
-            <li><a href="index.html" class="nav-font nav-list-link">Agencja</a></li>
-            <li><a href="portfolio.html" class="nav-font active-page">Porftolio</a></li>
-            <li><a href="#kontakt" class="nav-font nav-list-link">Kontakt</a></li>
+    <header>
+      <div class="container header">
+        <a href="index.html" class="header__logo"
+          ><span class="header__logo--blue">Web</span>Studio</a
+        >
+        <nav class="navigation">
+          <ul class="menu">
+            <li><a href="index.html" class="menu__item">Agencja</a></li>
+            <li><a href="portfolio.html" class="menu__item menu__item--highlight">Porftolio</a></li>
+            <li><a href="#kontakt" class="menu__item">Kontakt</a></li>
           </ul>
         </nav>
 
-        <ul class="nav-list-sec nav-list-sec-box">
-          <li class="grey-font contact-mail">
-            <a href="mailto:info@devstudio.com" class="contact icon-color">
+        <ul class="contact">
+          <li>
+            <a href="mailto:info@devstudio.com" class="contact__link contact__link--color">
               <svg width="16px" height="12px">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
-              info@devstudio.com
-            </a>
+              info@devstudio.com</a
+            >
           </li>
 
-          <li class="grey-font">
-            <a href="tel:+48111111111" class="contact icon-color"
-              ><svg width="10px" height="16px">
+          <li>
+            <a href="tel:+48111111111" class="contact__link contact__link--color">
+              <svg width="10px" height="16px">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
               +48 111 111 111</a

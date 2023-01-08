@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Zadanie domowe 6</title>
+    <title>Zadanie domowe 7</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
@@ -30,20 +30,22 @@
   </head>
 
   <body>
-    <header class="box-head">
-      <div class="container header-container">
-        <a href="index.html" class="logo logo-box"><span class="logo-color">Web</span>Studio</a>
-        <nav class="nav-box">
-          <ul class="nav-list">
-            <li><a href="index.html" class="nav-list-link active-page">Agencja</a></li>
-            <li><a href="portfolio.html" class="nav-list-link">Porftolio</a></li>
-            <li><a href="#kontakt" class="nav-list-link">Kontakt</a></li>
+    <header>
+      <div class="container header">
+        <a href="index.html" class="header__logo"
+          ><span class="header__logo--blue">Web</span>Studio</a
+        >
+        <nav class="navigation">
+          <ul class="menu">
+            <li><a href="index.html" class="menu__item menu__item--highlight">Agencja</a></li>
+            <li><a href="portfolio.html" class="menu__item">Porftolio</a></li>
+            <li><a href="#kontakt" class="menu__item">Kontakt</a></li>
           </ul>
         </nav>
 
-        <ul class="nav-list-sec-box">
-          <li class="contact-mail">
-            <a href="mailto:info@devstudio.com" class="contact icon-color">
+        <ul class="contact">
+          <li>
+            <a href="mailto:info@devstudio.com" class="contact__link contact__link--color">
               <svg width="16px" height="12px">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
@@ -52,7 +54,7 @@
           </li>
 
           <li>
-            <a href="tel:+48111111111" class="contact icon-color">
+            <a href="tel:+48111111111" class="contact__link contact__link--color">
               <svg width="10px" height="16px">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
@@ -63,68 +65,63 @@
       </div>
     </header>
 
-    <main class="main-section">
-      <div class="bg-photo">
-        <section class="main-section-box section">
-          <div class="container">
-            <h1 class="center-element-font middle-text-box">
-              EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU
-            </h1>
-
-            <div class="button-pos">
-              <button type="button" data-modal-open class="main-button">Zamów usługe</button>
-            </div>
+    <main class="page page--color">
+      <div class="page__image">
+        <section class="page__image--overlay">
+          <div class="container section">
+            <h1 class="page__image-text">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
+            <button type="button" data-modal-open class="page__btn">Zamów usługe</button>
           </div>
         </section>
       </div>
 
-      <section class="section margin">
+      <section class="section">
         <div class="container">
-          <ul class="paragraph-list paragraph-list-box">
+          <ul class="asset-list">
             <li>
-              <svg class="paragraph-list-icons">
+              <svg class="asset-list__icon">
                 <use href="./images/icons.svg#icon-antenna" width="70px" height="70px"></use>
               </svg>
 
-              <span class="p-header"><b>LOREM IPSUM</b></span>
+              <span class="asset-list__paragraph-headline"><b>LOREM IPSUM</b></span>
 
-              <p class="p-text">
+              <p class="asset-list__paragraph-text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
                 sodales dui. Interdum et malesuada
               </p>
             </li>
 
             <li>
-              <svg class="paragraph-list-icons">
+              <svg class="asset-list__icon">
                 <use href="./images/icons.svg#icon-clock" width="70px" height="70px"></use>
               </svg>
-              <span class="p-header"><b>LOREM IPSUM</b></span>
+              <span class="asset-list__paragraph-headline"><b>LOREM IPSUM</b></span>
 
-              <p class="p-text">
+              <p class="asset-list__paragraph-text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
                 sodales dui. Interdum et malesuada
               </p>
             </li>
 
             <li>
-              <svg class="paragraph-list-icons">
+              <svg class="asset-list__icon">
                 <use href="./images/icons.svg#icon-diagram" width="70px" height="70px"></use>
               </svg>
-              <span class="p-header"><b>LOREM IPSUM</b></span>
+              <span class="asset-list__paragraph-headline"><b>LOREM IPSUM</b></span>
 
-              <p class="p-text">
+              <p class="asset-list__paragraph-text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
                 sodales dui. Interdum et malesuada
               </p>
             </li>
 
             <li>
-              <svg class="paragraph-list-icons">
+              <svg class="asset-list__icon">
                 <use href="./images/icons.svg#icon-astronaut" width="70px" height="70px"></use>
               </svg>
-              <span class="p-header"><b>LOREM IPSUM</b></span>
+              <span class="asset-list__paragraph-headline"><b>LOREM IPSUM</b></span>
 
-              <p class="p-text">
+              <p class="asset-list__paragraph-text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
                 sodales dui. Interdum et malesuada
               </p>
@@ -134,8 +131,8 @@
       </section>
       <section class="section">
         <div class="container">
-          <h2 class="header-font">Czym się zajmujemy</h2>
-          <ul class="images-list images-list-box">
+          <h2 class="page__section-header">Czym się zajmujemy</h2>
+          <ul class="images-list">
             <li>
               <img
                 src="images/photo1.jpg"
@@ -175,7 +172,7 @@
 
       <section class="team-section section">
         <div class="container">
-          <h2 class="header-font">Nasz zespół</h2>
+          <h2 class="page__section-header">Nasz zespół</h2>
           <ul class="images-team-list images-team-list-box">
             <li class="team-picture-box">
               <figure>
@@ -356,7 +353,7 @@
 
       <section class="section">
         <div class="container">
-          <h2 class="header-font">Nasi Klienci</h2>
+          <h2 class="page__section-header">Nasi Klienci</h2>
           <ul class="client-list">
             <li class="client-list-border">
               <a class="client-list-icon-box">
@@ -408,7 +405,9 @@
       <div class="container">
         <address class="foot-links foot-links-box">
           <div>
-            <a href="index.html" class="foot-logo"><span class="logo-color">Web</span>Studio</a>
+            <a href="index.html" class="foot-logo"
+              ><span class="header__logo--blue">Web</span>Studio</a
+            >
             <ul class="foot-links-list">
               <li>
                 <p class="street">m. Warszawa, Aleje Jerozolimskie 21</p>
