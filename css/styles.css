@@ -1,20 +1,20 @@
 /* zmienne */
 :root {
   --hover-color: #2196f3;
-  --bg-color: #2f303a;
+  --animation-hover: rgba(33, 150, 243, 0.9);
   --font-color: #212121;
   --form-box-color: rgba(33, 33, 33, 0.2);
+  --bg-color: #2f303a;
   --nr-color-alpha: rgba(117, 117, 117, 0.5);
   --nr-color: #757575;
-  --main-bg-color: #e5e5e5;
-  --team-bg-color: #f5f4fa;
   --foot-font-color: rgba(255, 255, 255, 0.6);
   --newsletter-border: rgba(255, 255, 255, 0.3);
+  --main-bg-color: #e5e5e5;
+  --team-bg-color: #f5f4fa;
   --border-portfolio: #eeeeee;
   --border-header: #ececec;
   --icon-color: #afb1b8;
   --X-button: #e9e9ea;
-  --animation-hover: rgba(33, 150, 243, 0.9);
 }
 
 * {
@@ -35,7 +35,9 @@ img {
 ul {
   list-style-type: none;
 }
+
 /* INDEX START */
+
 .section {
   padding: 94px 0px;
 }
@@ -66,9 +68,6 @@ ul {
   color: var(--hover-color);
 }
 
-.navigation {
-}
-
 .menu {
   justify-content: center;
   align-items: center;
@@ -86,14 +85,8 @@ ul {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .menu__item--highlight {
-  content: '';
   color: var(--hover-color);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.17;
-  letter-spacing: 0.02em;
   text-decoration: none;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu__item--highlight::after {

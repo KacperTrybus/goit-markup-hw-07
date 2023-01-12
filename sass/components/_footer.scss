@@ -1,0 +1,120 @@
+.foot {
+  background-color: var(--bg-color);
+  display: flex;
+}
+.foot__links {
+  margin: 0px 0px 60px 15px;
+  display: flex;
+  font-style: normal;
+}
+
+.foot--logo {
+  color: white;
+  display: block;
+  margin: 60px 0px 20px 0px;
+}
+.foot__street {
+  color: white;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.foot__contact {
+  color: var(--foot-font-color);
+  text-decoration: none;
+}
+.foot__contact:hover,
+.foot__contact:focus {
+  color: var(--hover-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.foot__contact--mail {
+  display: inline-flex;
+  padding: 9px 0px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.join-us {
+  display: flex;
+  margin: 72px 0px 0px 70px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.foot__headline {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.17;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 0.03em;
+}
+.join-us__list {
+  display: flex;
+  margin-top: 20px;
+  gap: 10px;
+}
+.join-us__icon-circle {
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.join-us__icon-circle:hover,
+.join-us__icon-circle:focus {
+  background-color: var(--hover-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.join-us-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  fill: #fff;
+  cursor: pointer;
+}
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  margin: 72px 0px 0px 78px;
+}
+.newsletter-form {
+  margin-top: 20px;
+  align-items: center;
+  display: flex;
+}
+.newsletter-mail__mailbox {
+  width: 358px;
+  height: 50px;
+  background-color: var(--bg-color);
+  border: 1px var(--newsletter-border) solid;
+  border-radius: 4px;
+  color: #fff;
+  padding: 15px 0px 15px 16px;
+}
+.newsletter-mail__mailbox::placeholder {
+  color: var(--foot-font-color);
+}
+.newsletter-btn {
+  background-color: var(--hover-color);
+  width: 200px;
+  height: 50px;
+  margin-left: 12px;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.newsletter-btn__font {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  color: #fff;
+  letter-spacing: 0.06em;
+  display: inline;
+}
+.newsletter-btn__icon {
+  fill: #fff;
+  position: relative;
+  top: 6px;
+  left: 12px;
+}
