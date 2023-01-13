@@ -19,20 +19,6 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
   }
-  &__contact {
-    color: $footFontColor;
-    text-decoration: none;
-  }
-  &__contact:hover,
-  &__contact:focus {
-    color: $hoverColor;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  &__contact--mail {
-    display: inline-flex;
-    padding: 9px 0px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
   &__headline {
     font-weight: 700;
     font-size: 16px;
@@ -40,6 +26,23 @@
     text-transform: uppercase;
     color: #fff;
     letter-spacing: 0.03em;
+  }
+
+  .foot__contact {
+    color: $footFontColor;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      color: $hoverColor;
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &--mail {
+      display: inline-flex;
+      padding: 9px 0px;
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
   }
 }
 
@@ -60,11 +63,12 @@
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-  }
-  &__icon-circle:hover,
-  &__icon-circle:focus {
-    background-color: $hoverColor;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      background-color: $hoverColor;
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
   }
   &-icon {
     display: flex;
@@ -75,6 +79,9 @@
     cursor: pointer;
   }
 }
+
+// zapis do newslettera
+
 .newsletter {
   display: flex;
   flex-direction: column;
@@ -94,9 +101,10 @@
     color: #fff;
     padding: 15px 0px 15px 16px;
     outline: none;
-  }
-  &-mail__mailbox::placeholder {
-    color: $footFontColor;
+
+    &::placeholder {
+      color: $footFontColor;
+    }
   }
   &-btn {
     background-color: $hoverColor;
@@ -106,19 +114,20 @@
     border: none;
     border-radius: 4px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  }
-  &-btn__font {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.87;
-    color: #fff;
-    letter-spacing: 0.06em;
-    display: inline;
-  }
-  &-btn__icon {
-    fill: #fff;
-    position: relative;
-    top: 6px;
-    left: 12px;
+
+    &__font {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 1.87;
+      color: #fff;
+      letter-spacing: 0.06em;
+      display: inline;
+    }
+    &__icon {
+      fill: #fff;
+      position: relative;
+      top: 6px;
+      left: 12px;
+    }
   }
 }
