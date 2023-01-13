@@ -12,12 +12,12 @@
   font-size: 26px;
   font-family: 'Raleway';
   line-height: 1.17;
-  color: #000;
+  color: $hover-color;
   text-decoration: none;
 }
 
 .logo--blue {
-  color: var(--hover-color);
+  color: $hover-color;
 }
 
 .menu {
