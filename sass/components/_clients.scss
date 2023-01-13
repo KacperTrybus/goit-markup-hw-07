@@ -4,20 +4,20 @@
   margin-top: 50px;
 }
 .client-list__border {
-  border: solid var(--icon-color) 1px;
+  border: solid $iconColor 1px;
   border-radius: 4px;
   cursor: pointer;
 }
 .client-list__border:hover,
 .client-list__border:focus {
-  border-color: var(--hover-color);
+  border-color: $hoverColor;
 }
 .client-list-icon {
-  fill: var(--icon-color);
+  fill: $iconColor;
   padding: 17.71px 32px 14.25px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .client-list-icon:hover,
 .client-list-icon:focus {
-  fill: var(--hover-color);
+  fill: $hoverColor;
 }

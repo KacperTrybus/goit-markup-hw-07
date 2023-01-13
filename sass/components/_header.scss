@@ -3,7 +3,7 @@
   justify-content: center;
   align-items: center;
   border-bottom: solid 1px;
-  border-color: var(--border-header);
+  border-color: $borderHeader;
   min-width: 100%;
 }
 
@@ -12,12 +12,12 @@
   font-size: 26px;
   font-family: 'Raleway';
   line-height: 1.17;
-  color: $hover-color;
+  color: #000;
   text-decoration: none;
 }
 
 .logo--blue {
-  color: $hover-color;
+  color: $hoverColor;
 }
 
 .menu {
@@ -32,12 +32,12 @@
   font-size: 14px;
   line-height: 1.17;
   letter-spacing: 0.02em;
-  color: var(--font-color);
+  color: $fontColor;
   text-decoration: none;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .menu__item--highlight {
-  color: var(--hover-color);
+  color: $hoverColor;
   text-decoration: none;
 }
 
@@ -45,7 +45,7 @@
   content: '';
   height: 4px;
   width: 100%;
-  background-color: var(--hover-color);
+  background-color: $hoverColor;
   display: flex;
   border-radius: 2px;
   position: relative;
@@ -53,7 +53,7 @@
 }
 .menu__item:hover,
 .menu__item:focus {
-  color: var(--hover-color);
+  color: $hoverColor;
 }
 
 .contact {
@@ -67,15 +67,15 @@
   text-decoration: none;
 }
 .contact__link--color {
-  color: var(--nr-color);
+  color: $nrColor;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  fill: var(--nr-color);
+  fill: $nrColor;
 }
 
 .contact__link:hover,
 .contact__link:focus {
-  color: var(--hover-color);
-  fill: var(--hover-color);
+  color: $hoverColor;
+  fill: $hoverColor;
 }
 .contact__icon {
   margin-right: 10px;

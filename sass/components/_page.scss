@@ -22,7 +22,7 @@
 }
 .page__btn {
   color: white;
-  background-color: var(--hover-color);
+  background-color: $hoverColor;
   border: none;
   font-weight: 700;
   font-size: 16px;
@@ -38,7 +38,7 @@
   margin-bottom: 106px;
 }
 .page__section-header {
-  color: var(--font-color);
+  color: $fontColor;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;

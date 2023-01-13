@@ -5,7 +5,7 @@
   justify-content: center;
 }
 .project-list__item {
-  border: solid 1px var(--border-portfolio);
+  border: solid 1px $borderPortfolio;
 }
 .project-list__item:hover,
 .project-list__item:hover .project-list__item--overlay {
@@ -25,7 +25,7 @@
   position: absolute;
   padding: 49px 45px 49px 24px;
   color: #fff;
-  background-color: var(--animation-hover);
+  background-color: $animationHover;
   font-size: 18px;
   line-height: 1.5;
   letter-spacing: 0.03em;
@@ -39,7 +39,7 @@
   margin: 10px;
 }
 .project-list-item-caption__headline {
-  color: var(--font-color);
+  color: $fontColor;
   font-weight: 500;
   font-size: 18px;
   line-height: 2;
@@ -48,7 +48,7 @@
   padding: 20px 24px 4px 24px;
 }
 .project-list-item-caption__text {
-  color: var(--nr-color);
+  color: $nrColor;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
