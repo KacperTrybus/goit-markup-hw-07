@@ -7,12 +7,12 @@
     border: solid $iconColor 1px;
     border-radius: 4px;
     cursor: pointer;
-  }
-  &__border:hover,
-  &__border:focus {
-    border-color: $hoverColor;
-  }
 
+    &:hover,
+    &:focus {
+      border-color: $hoverColor;
+    }
+  }
   .client-list-icon {
     fill: $iconColor;
     padding: 17.71px 32px 14.25px;
